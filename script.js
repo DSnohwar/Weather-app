@@ -30,18 +30,23 @@ const getWeather = (city) => {
         .catch(err => console.error(err));
 }
 submit.addEventListener("click", (e) => {
+    e.preventDefault()
     getWeather(city.value);
 })
 Mumbai.addEventListener("click", (e) => {
+    e.preventDefault()
     getWeather("Mumbai");
 })
 Seoul.addEventListener("click", (e) => {
+    e.preventDefault()
     getWeather("Seoul");
 })
 Tokyo.addEventListener("click", (e) => {
+    e.preventDefault()
     getWeather("Tokyo");
 })
 NY.addEventListener("click", (e) => {
+    e.preventDefault()
     getWeather("New York");
 })
 getWeather("Delhi");
